@@ -376,12 +376,12 @@ function displayCalc(container, type, params) {
         calcDiv.setAttribute("class", "row");
         calcDiv.setAttribute(
             "style",
-            "width:600px;height:450px;padding-left:30px;"
+            "height:450px;padding-left:30px;"
           );
         container.appendChild(calcDiv);
 
         var table = document.createElement("table");
-        table.setAttribute("style","width:1000px;background-color:white;");
+        table.setAttribute("style","background-color:white;");
         var header = table.createTHead();
         var header_row = header.insertRow(0);
         var header_cell1 = header_row.insertCell(0);
