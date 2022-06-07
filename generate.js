@@ -381,7 +381,7 @@ function displayCalc(container, type, params) {
         container.appendChild(calcDiv);
 
         var table = document.createElement("table");
-        table.setAttribute("style","width:600px;background-color:white;");
+        table.setAttribute("style","width:1000px;background-color:white;");
         var header = table.createTHead();
         var header_row = header.insertRow(0);
         var header_cell1 = header_row.insertCell(0);
