@@ -440,17 +440,18 @@ function displayCalc(container, type, params) {
   
         var row1 = table.insertRow(-1);
         var row1Cell = row1.insertCell(-1);
-//         row1Cell.appendChild(document.createTextNode("<h3>Formula: " + paramList.join("")+"</h3>"));
         row1Cell.innerHTML = "<h3>Formula: " + paramList.join("")+"</h3>";
 
-        // var row2 = table.insertRow(-1);
-        // var row2Cell = row2.insertCell(-1);
+        var row2 = table.insertRow(-1);
+        var row2Cell = row2.insertCell(-1);
+        row2Cell.innerHTML = "<h3>Age= 35, AST=40, ALT=32, Platelet=300</h3>";
         // var resultH1 = document.createElement("h3");
         // resultH1.textContent = "Age= 35, AST=40, ALT=32, Platelet=300";
         // row2Cell.appendChild(document.createTextNode(resultH1));
 
-        // var row3 = table.insertRow(-1);
-        // var row3Cell = row3.insertCell(-1);
+        var row3 = table.insertRow(-1);
+        var row3Cell = row3.insertCell(-1);
+        row3Cell.innerHTML = "<h2>Result= 0.82 points</h2>";
         // var resultH3 = document.createElement("h2");
         // resultH3.textContent = "Result= " + "0.82 points"; 
         // row3Cell.appendChild(document.createTextNode(resultH3));
