@@ -427,15 +427,21 @@ function displayCalc(container, type, params) {
         // row3Cell.appendChild(document.createTextNode(resultH3));
  //Stop
   
+        var medInfoTableDiv = document.createElement("div");
+        medInfoTableDiv.setAttribute("class", "row");
+        container.appendChild(medInfoTableDiv);
+ 
+  
         var calcDiv = document.createElement("div");
         medInfoTableDiv.appendChild(calcDiv);
-
         var medInfoHeading = document.createElement("h2");
+ 
+ 
         medInfoHeading.textContent = "Calclator Name: " + type;
         calcDiv.appendChild(medInfoHeading);
-
         var medInfoHeading3 = document.createElement("h3");
         medInfoHeading3.textContent = "Formula: " + paramList.join("");
+ 
         calcDiv.appendChild(medInfoHeading3);
  
         var resultH1 = document.createElement("h3");
