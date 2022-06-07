@@ -256,7 +256,7 @@ QueryPatientData(type, 10)
 
       medInfoHeading.setAttribute(
         "style",
-        "padding-left:30px; color: black;"
+        "padding-left:200px; color: black;"
       );
       medInfoHeading.textContent = "Medication Information: ";
       medInfoTableDiv.appendChild(medInfoHeading);
@@ -268,6 +268,10 @@ QueryPatientData(type, 10)
       // innerDiv.setAttribute("style", "padding-left:30px");
       container.appendChild(innerDiv);
       var table = document.createElement("table");
+      table.setAttribute(
+        "style",
+        "padding-left:30px;"
+      );
       var row1 = table.insertRow(-1);
       var header = table.createTHead();
       var header_row = header.insertRow(0);
