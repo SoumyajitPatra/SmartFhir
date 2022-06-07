@@ -370,23 +370,23 @@ QueryPatientData(type, 10)
 }
 
 function displayCalc(container, type, params) {
-  var paramList = params.split("|");
+//   var paramList = params.split("|");
   
-  var calcTableDiv = document.createElement("div");
-  calcTableDiv.setAttribute("class", "row");
-  //container.appendChild(calcTableDiv);
+//   var calcTableDiv = document.createElement("div");
+//   calcTableDiv.setAttribute("class", "row");
+//   //container.appendChild(calcTableDiv);
 
-  var table = document.createElement("table");
-  var header = table.createTHead();
-  var header_row = header.insertRow(0);
-  var header_cell1 = header_row.insertCell(0);
+//   var table = document.createElement("table");
+//   var header = table.createTHead();
+//   var header_row = header.insertRow(0);
+//   var header_cell1 = header_row.insertCell(0);
 
-  var calcHeading = document.createElement("h2");
-  calcHeading.textContent = "Calclator Name: " + type;
-  header_cell1.innerHTML = calcHeading;
-  calcTableDiv.appendChild("<b>SL No.</b>");
+//   var calcHeading = document.createElement("h2");
+//   calcHeading.textContent = "Calclator Name: " + type;
+//   header_cell1.innerHTML = calcHeading;
+//   calcTableDiv.appendChild("<b>SL No.</b>");
 
-  container.appendChild(calcTableDiv);
+//   container.appendChild(calcTableDiv);
 
 // var valuesStringify = JSON.stringify(values, null, 4);
  
@@ -427,26 +427,26 @@ function displayCalc(container, type, params) {
         // row3Cell.appendChild(document.createTextNode(resultH3));
  //Stop
   
-        // var calcDiv = document.createElement("div");
-        // medInfoTableDiv.appendChild(calcDiv);
+        var calcDiv = document.createElement("div");
+        medInfoTableDiv.appendChild(calcDiv);
 
-        // var medInfoHeading = document.createElement("h2");
-        // medInfoHeading.textContent = "Calclator Name: " + type;
-        // calcDiv.appendChild(medInfoHeading);
+        var medInfoHeading = document.createElement("h2");
+        medInfoHeading.textContent = "Calclator Name: " + type;
+        calcDiv.appendChild(medInfoHeading);
 
-        // var medInfoHeading3 = document.createElement("h3");
-        // medInfoHeading3.textContent = "Formula: " + paramList.join("");
-        // calcDiv.appendChild(medInfoHeading3);
+        var medInfoHeading3 = document.createElement("h3");
+        medInfoHeading3.textContent = "Formula: " + paramList.join("");
+        calcDiv.appendChild(medInfoHeading3);
  
-        // var resultH1 = document.createElement("h3");
-        // resultH1.textContent = "Age= 35, AST=40, ALT=32, Platelet=300";
-        // calcDiv.appendChild(resultH1);
+        var resultH1 = document.createElement("h3");
+        resultH1.textContent = "Age= 35, AST=40, ALT=32, Platelet=300";
+        calcDiv.appendChild(resultH1);
  
-        // var resultH3 = document.createElement("h2");
-        // resultH3.textContent = "Result= " + "0.82 points"; 
-        // calcDiv.appendChild(resultH3);     
+        var resultH3 = document.createElement("h2");
+        resultH3.textContent = "Result= " + "0.82 points"; 
+        calcDiv.appendChild(resultH3);     
         
-        // container.appendChild(medInfoTableDiv);
+        container.appendChild(medInfoTableDiv);
   }
 
 function displayTreeView(container, type, params, maxCount) {
