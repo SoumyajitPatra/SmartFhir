@@ -376,7 +376,7 @@ function displayCalc(container, type, params) {
         calcDiv.setAttribute("class", "row");
         calcDiv.setAttribute(
             "style",
-            "width:800px;height:600px;padding-left:30px;"
+            "width:1000px;height:500px;padding-left:30px;"
           );
         container.appendChild(calcDiv);
 
