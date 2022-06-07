@@ -427,9 +427,9 @@ function displayCalc(container, type, params) {
         // row3Cell.appendChild(document.createTextNode(resultH3));
  //Stop
   
-        var medInfoTableDiv = document.createElement("div");
-        medInfoTableDiv.setAttribute("class", "row");
-        container.appendChild(medInfoTableDiv);
+        var calcTableDiv = document.createElement("div");
+        calcTableDiv.setAttribute("class", "row");
+        container.appendChild(calcTableDiv);
  
   
         var calcDiv = document.createElement("div");
@@ -451,7 +451,7 @@ function displayCalc(container, type, params) {
         resultH3.textContent = "Result= " + "0.82 points"; 
         calcDiv.appendChild(resultH3);     
         
-        container.appendChild(medInfoTableDiv);
+        container.appendChild(calcTableDiv);
   }
 
 function displayTreeView(container, type, params, maxCount) {
