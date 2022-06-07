@@ -436,9 +436,9 @@ function displayCalc(container, type, params) {
         var header_row = header.insertRow(0);
         var header_cell1 = header_row.insertCell(0);
 
-//         var medInfoHeading = document.createElement("h2");
-//         medInfoHeading.textContent = "Calclator Name: " + type;
-        header_cell1.innerHTML = "Calclator Name: " + type;
+        var medInfoHeading = document.createElement("h2");
+        medInfoHeading.textContent = "Calclator Name: " + type;
+        header_cell1.innerHTML = medInfoHeading;
         calcTableDiv.appendChild(table);
   
 //         var calcDiv = document.createElement("div");
