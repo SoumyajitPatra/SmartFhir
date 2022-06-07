@@ -382,7 +382,7 @@ function displayCalc(container, type, params) {
 //   var header_cell1 = header_row.insertCell(0);
 
 //   var calcHeading = document.createElement("h2");
-//   calcHeading.textContent = "Calclator Name: " + type;
+//   calcHeading.textContent = "Calculator Name: " + type;
 //   header_cell1.innerHTML = calcHeading;
 //   calcTableDiv.appendChild("<b>SL No.</b>");
 
