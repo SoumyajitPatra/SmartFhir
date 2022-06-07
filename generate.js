@@ -265,13 +265,10 @@ QueryPatientData(type, 10)
       var innerDiv = document.createElement("div");
       innerDiv.setAttribute("id", "medicationInformationTable");
       innerDiv.setAttribute("class", "row");
-      // innerDiv.setAttribute("style", "padding-left:30px");
+      innerDiv.setAttribute("style", "padding-left:30px");
       container.appendChild(innerDiv);
       var table = document.createElement("table");
-      table.setAttribute(
-        "style",
-        "padding-left:30px;"
-      );
+      table.setAttribute("style","padding-left:30px;");
       var row1 = table.insertRow(-1);
       var header = table.createTHead();
       var header_row = header.insertRow(0);
