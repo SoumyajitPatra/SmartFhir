@@ -380,7 +380,7 @@ function displayCalc(container, type, params) {
         var header = table.createTHead();
         var header_row = header.insertRow(0);
         var header_cell1 = header_row.insertCell(0);
-        header_cell1.innerHTML = "<h2>Calclator Name: " + type + "</h2>";
+        header_cell1.innerHTML = "<h2>Calculator Name: " + type + "</h2>";
 
         var row1 = table.insertRow(-1);
         var row1Cell = row1.insertCell(-1);
