@@ -370,7 +370,7 @@ QueryPatientData(type, 10)
 }
 
 function displayCalc(container, type, params) {
-//   var paramList = params.split("|");
+  var paramList = params.split("|");
   
 //   var calcTableDiv = document.createElement("div");
 //   calcTableDiv.setAttribute("class", "row");
