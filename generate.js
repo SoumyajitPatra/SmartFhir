@@ -436,7 +436,6 @@ function displayCalc(container, type, params) {
         medInfoTableDiv.appendChild(calcDiv);
         var medInfoHeading = document.createElement("h2");
  
- 
         medInfoHeading.textContent = "Calclator Name: " + type;
         calcDiv.appendChild(medInfoHeading);
         var medInfoHeading3 = document.createElement("h3");
