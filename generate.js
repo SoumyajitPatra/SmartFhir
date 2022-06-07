@@ -427,16 +427,16 @@ function displayCalc(container, type, params) {
         // row3Cell.appendChild(document.createTextNode(resultH3));
  //Stop
   
-        var calcTableDiv = document.createElement("div");
-        calcTableDiv.setAttribute("class", "row");
-        container.appendChild(calcTableDiv);
+        var calcDiv = document.createElement("div");
+        calcDiv.setAttribute("class", "row");
+        container.appendChild(calcDiv);
  
         var table = document.createElement("table");
         var header = table.createTHead();
         var header_row = header.insertRow(0);
         var header_cell1 = header_row.insertCell(0);
         header_cell1.innerHTML = "<h2>Calclator Name: " + type + "</h2>";
-        calcTableDiv.appendChild(table);
+        calcDiv.appendChild(table);
   
         var row1 = table.insertRow(-1);
         var row1Cell = row1.insertCell(-1);
@@ -475,7 +475,7 @@ function displayCalc(container, type, params) {
 //         resultH3.textContent = "Result= " + "0.82 points"; 
 //         calcDiv.appendChild(resultH3);     
         
-        container.appendChild(calcTableDiv);
+        container.appendChild(calcDiv);
   }
 
 function displayTreeView(container, type, params, maxCount) {
