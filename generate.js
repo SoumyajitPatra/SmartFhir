@@ -324,7 +324,7 @@ QueryPatientData(type, 10)
 
       medInfoHeading.setAttribute(
         "style",
-        "padding-left:30px; color: black;"
+        "padding-left:60px; color: black;"
       );
       medInfoHeading.textContent = "Procedure Information: ";
       medInfoTableDiv.appendChild(medInfoHeading);
