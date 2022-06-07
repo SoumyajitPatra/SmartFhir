@@ -374,10 +374,10 @@ function displayCalc(container, type, params) {
 
         var calcDiv = document.createElement("div");
         calcDiv.setAttribute("class", "row");
-//         calcDiv.setAttribute(
-//             "style",
-//             "width:600px;height:400px;padding-left:30px;"
-//           );
+        calcDiv.setAttribute(
+            "style",
+            "width:600px;height:400px;padding-left:30px;"
+          );
         container.appendChild(calcDiv);
 
         var table = document.createElement("table");
