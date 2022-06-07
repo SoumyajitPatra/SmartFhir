@@ -438,11 +438,9 @@ function displayCalc(container, type, params) {
         header_cell1.innerHTML = "<h2>Calclator Name: " + type + "</h2>";
         calcTableDiv.appendChild(table);
   
-          var row1 = table.insertRow(-1);
+        var row1 = table.insertRow(-1);
         var row1Cell = row1.insertCell(-1);
-//         var medInfoHeading3 = document.createElement("h3");
-//         medInfoHeading3.textContent = "Formula: " + paramList.join("");
-        row1Cell.appendChild(document.createTextNode("Formula: " + paramList.join("")));
+        row1Cell.appendChild(document.createTextNode("<h3>Formula: " + paramList.join("")+</h3>));
 
         // var row2 = table.insertRow(-1);
         // var row2Cell = row2.insertCell(-1);
