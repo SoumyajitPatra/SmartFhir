@@ -66,7 +66,7 @@ QueryPatientDataWithCode(type, loincCode, 10)
     procedureInfoChartDiv.appendChild(statusHeading);
     var chartDiv = document.createElement("div");
     chartDiv.setAttribute("id", "chart");
-    chartDiv.setAttribute("style", "width:600px;height:400px; padding-left:30px;");
+    chartDiv.setAttribute("style", "width:800px;height:400px; padding-left:30px;");
     procedureInfoChartDiv.appendChild(chartDiv);
     var dates = [];
     var values = [];
