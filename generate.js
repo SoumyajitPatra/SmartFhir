@@ -440,7 +440,8 @@ function displayCalc(container, type, params) {
   
         var row1 = table.insertRow(-1);
         var row1Cell = row1.insertCell(-1);
-        row1Cell.appendChild(document.createTextNode("<h3>Formula: " + paramList.join("")+"</h3>"));
+//         row1Cell.appendChild(document.createTextNode("<h3>Formula: " + paramList.join("")+"</h3>"));
+        row1Cell.innerHTML = "<h3>Formula: " + paramList.join("")+"</h3>";
 
         // var row2 = table.insertRow(-1);
         // var row2Cell = row2.insertCell(-1);
