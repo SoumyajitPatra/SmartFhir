@@ -371,6 +371,22 @@ QueryPatientData(type, 10)
 
 function displayCalc(container, type, params) {
   var paramList = params.split("|");
+  
+  var calcTableDiv = document.createElement("div");
+  calcTableDiv.setAttribute("class", "row");
+  //container.appendChild(calcTableDiv);
+
+  var table = document.createElement("table");
+  var header = table.createTHead();
+  var header_row = header.insertRow(0);
+  var header_cell1 = header_row.insertCell(0);
+
+  var calcHeading = document.createElement("h2");
+  calcHeading.textContent = "Calclator Name: " + type;
+  header_cell1.innerHTML = calcHeading;
+  calcTableDiv.appendChild("<b>SL No.</b>");
+
+  container.appendChild(calcTableDiv);
 
 // var valuesStringify = JSON.stringify(values, null, 4);
  
